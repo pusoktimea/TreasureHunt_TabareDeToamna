@@ -3,13 +3,16 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="first.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <p class="txt"> There's one more challenge, do you accept it? </p>
+    <p class="txt" id="welcome-text"> There's one more challenge, do you accept it? </p>
+    <p class="txt" id="message" style="display: none;">Congratulations!
+   You have proven that you're a great team player not only in your team, but also you played well with other teams!
+   Don't forget to apply this at your workplace!</p>
     <!--
  Congratulations!
 You have proven that you're a great team player not only in your team, but also you played well with other teams!
@@ -17,8 +20,8 @@ Don't forget to apply this at your workplace!
  -->
   </div>
   <div class="form-check">
-      <label class="form-check-label">
-              <input type="checkbox" name="terms" id="checkme" class="form-check-input" required onchange="statecheck(); this.checked=false;"> </input>
+      <label for="checkme" class="form-check-label">
+              <input type="checkbox" id="checkme" name="checkme" class="form-check-input" required onchange="this.checked=false;" onclick="ShowHideDiv(this)">
                         <u class="checkboxText">I accept the last challenge!</u>
       </label>
   </div>
