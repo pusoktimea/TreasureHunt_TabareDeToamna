@@ -62,12 +62,25 @@ input:focus {
 }
 
 .txt {
-	margin-top: 300px;
+	margin-top: 150px;
 	color: #fff;
 	font-size: 22px;
 	line-height: 24px;
 	white-space: nowrap;
   -webkit-animation: rightThenLeft 10s infinite;
+}
+
+.form-check-input{
+	width:0%;
+	margin-top: 100px;
+}
+
+.checkboxText {
+	color:white;
+}
+
+.chellange {
+	color:white;
 }
 
 @-webkit-keyframes rightThenLeft {
