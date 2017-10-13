@@ -39,12 +39,12 @@ var checker = document.getElementById('checkme');
 //     }
 // });
 
-function ShowHideDiv(checkme) {
-    var message = document.getElementById("message");
-    var welcomeText = document.getElementById("welcome-text");
-    message.style.display = checkme.checked ? "block" : "none";
-    welcomeText.style.display = checkme.checked ? "none" : "block";
-}
+setInterval(function() {
+  var message = document.getElementById("message");
+  var welcomeText = document.getElementById("welcome-text");
+  message.style.display = checkme.checked ? "block" : "none";
+  welcomeText.style.display = checkme.checked ? "none" : "block";
+}, 100);
 
 //
 // if(doneButton.enabled == true){
