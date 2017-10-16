@@ -8,36 +8,10 @@ function check(form)
   }
  else
  {
-   alert("That was not magical....try again");
+   alert("Give it another try");
   }
-  console.log("oh, you're almost there, keep trying");
 
 }
-
-var checker = document.getElementById('checkme');
-
-
-// checker.onchange = function() {
-//    document.getElementById('doneButton').disabled = false;
-// };
-
-// function statecheck(){
-//     console.log(this);
-//   console.log(this.checked);
-//   if( document.getElementById('checkme').checked===true){
-//    document.getElementById('doneButton').disabled === false;
-// }
-// }
-
-// $(".chellange").hide();
-// $(".form-check-label").click(function() {
-//     if($(this).is(":checked")) {
-//       console.log("Hello!")
-//         $(".chellange").show();
-//     } else {
-//         $(".chellange").hide();
-//     }
-// });
 
 setInterval(function() {
   var message = document.getElementById("message");
@@ -45,8 +19,3 @@ setInterval(function() {
   message.style.display = checkme.checked ? "block" : "none";
   welcomeText.style.display = checkme.checked ? "none" : "block";
 }, 100);
-
-//
-// if(doneButton.enabled == true){
-//   window.open('index.html');
-// }
