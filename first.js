@@ -9,6 +9,7 @@ function check(form)
  else
  {
    alert("Give it another try");
+   window.location="index.html";
   }
 
 }
