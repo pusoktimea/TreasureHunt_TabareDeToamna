@@ -2,7 +2,7 @@
 function check(form)
 {
 
- if(form.userid.value == "findthemagic" && form.pswrd.value == "hunter*123")
+ if(form.userid.value == "explorer" && form.pswrd.value == "hunter*123")
   {
     window.open('magic.html');
   }
